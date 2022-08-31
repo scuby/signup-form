@@ -6,30 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <meta name="description" content="A sign-up form for an imaginary service">
-    <script src="./script.js" defer></script>
+    <!-- <script src="./script.js" defer></script> -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <div class="left-col">
-        <span class="logo">
-            <img src="./media/odin-lined.png" alt="white line simple geometric odin project logo" id="logo" >ODIN</span>
-        <div id="shoutout">
-            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
-            on <a href="https://unsplash.com/">Unsplash</a>
-        </div>
+        <span class="logo"><img src="./media/odin-lined.png" alt="white line simple geometric odin project logo" id="logo" >ODIN</span>
+        <div id="shoutout">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
     </div>
     <div class="right-col">
-        <div class="row1">This is not a real online service! 
-                            You know you need something like this in your 
-                            life to help you realize your deepest dreams.
-                            Sign up <em>now</em> to get started.
-                            <br> 
-                            <br>
-                            You <em>know</em> you want to.
+        <div class="row1">
+            <span>This is not a real online service! You know you need something like this in your
+                    life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</span>
+
+            <span>You <em>know</em> you want to.</span>
         </div>
         <div id="form" class="row2">
             <h3>Let's do this!</h3>
+            <form action="#" method="post" class="form">
+                <div class="formLeft">
+                    <p>
+                        <label for="firstName">FIRST NAME</label><br>
+                        <input type="text" id="firstName" name="firstName" tabindex="1">
+                    </p>
+                    <p>
+                        <label for="emailAddress">EMAIL</label><br>
+                        <input type="email" tabindex="3">
+                    </p>
+                    <p>
+                        <label for="passwordInit">PASSWORD</label><br>
+                        <input type="password" tabindex="5">
+                    </p>
+                </div>
+                <div class="formRight">
+                    <p>
+                        <label for="lastName">LAST NAME</label><br>
+                        <input type="text" tabindex="2">
+                    </p>
+                    <p>
+                        <label for="phoneNumber">PHONE NUMBER</label><br>
+                        <input type="text" tabindex="4">
+                    </p>
+                    <p>
+                        <label for="passwordConf">CONFIRM PASSWORD</label><br>
+                        <input type="password" tabindex="6">
+                    </p>
+                </div>
+            </form>
         </div>
         <div class="row3">
             <button id="button" class="olive">Create Account</button>
