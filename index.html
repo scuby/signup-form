@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <meta name="description" content="A sign-up form for an imaginary service">
-    <!-- <script src="./script.js" defer></script> -->
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -32,34 +32,32 @@
                     </p>
                     <p>
                         <label for="emailAddress">EMAIL</label><br>
-                        <input type="email" tabindex="3">
+                        <input type="email" id="email" name="email" tabindex="3">
                     </p>
                     <p>
-                        <label for="passwordInit">PASSWORD</label><br>
-                        <input type="password" tabindex="5">
+                        <label for="initPassword">PASSWORD</label><br>
+                        <input type="password" id="initPassword" name="initPassword" tabindex="5">
                     </p>
                 </div>
                 <div class="formRight">
                     <p>
                         <label for="lastName">LAST NAME</label><br>
-                        <input type="text" tabindex="2">
+                        <input type="text" id="lastName" name="lastName" tabindex="2">
                     </p>
                     <p>
                         <label for="phoneNumber">PHONE NUMBER</label><br>
-                        <input type="text" tabindex="4">
+                        <input type="text" id="phoneNumber" name="phoneNumber" tabindex="4">
                     </p>
                     <p>
-                        <label for="passwordConf">CONFIRM PASSWORD</label><br>
-                        <input type="password" tabindex="6">
+                        <label for="confPassword">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confPassword" name="confPassword" tabindex="6" disabled>
                     </p>
                 </div>
+		<button id="button" class="olive">Create Account</button>
             </form>
         </div>
         <div class="row3">
-            <button id="button" class="olive">Create Account</button>
-            <p>
-                Already have an account? <a href="" id="login">Log in</a>
-            </p>
+            <p>Already have an account? <a href="" id="login">Log in</a></p>
         </div>
     </div>
     
